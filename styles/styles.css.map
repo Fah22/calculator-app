@@ -1,10 +1,10 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AGAA,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,OAAgB;CAC/B",
     "sources": [
         "styles.scss",
         "variables.scss",
-        "buttons.scss",
+        "header.scss",
         "main.scss",
         "header.scss"
     ],
