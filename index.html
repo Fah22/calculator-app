@@ -1,81 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="/styles/styles.css" />
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
-  <title>Calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="./styles/themes.css">
+  <title>Calc</title>
 </head>
-<body>
-  <div class="main">
-      <div class="calculator-container">
-        <header>
-          <div class="toggle">
-            <h3 class="calc-header">calc</h3>
-              <nav>
-                <p id="first">1</p>
-                <p id="second">2</p>
-                <p id="third">3</p>
-              </nav>
-          </div>
-          <div class="control">
-            <p>Theme</p>
-            <div class="box">
-              <div id="circle"></div>
-            </div>
-          </div>
-        </header>
-        <div class="calculator-display">
-          <form name="calculate">
-            <input type="text" name="text" id="screen" readonly />
-          </form>
+
+<body id="theme1">
+  <header>
+    <h1>calc</h1>
+    <div class="switch-style">
+      <span>Theme</span>
+      <div class="switch-box" id="circle-theme">
+        <div class="switch-button-text">
+          <span id="theme_1">1</span>
+          <span id="theme_2">2</span>
+          <span id="theme_3">3</span>
         </div>
-        <div class="calculator-body">
-            <div class="number">7</div>
-            <div class="number">8</div>
-            <div class="number">9</div>
-            <div class="delete-btn">DEL</div>
-            <div class="number">4</div>
-            <div class="number">5</div>
-            <div class="number">6</div>
-            <div class="add-btn">+</div>
-            <div class="number">1</div>
-            <div class="number">2</div>
-            <div class="number">3</div>
-            <div class="subtract-btn">-</div>
-            <div class="period-btn">.</div>
-            <div class="number">0</div>
-            <div class="divide-btn">/</div>
-            <div class="multiply-btn">x</div>
-            <div class="reset-btn">RESET</div>
-            <div class="equal-btn">=</div>          
-        </div>
+        <div class="switch-button" aria-hidden="true"></div>
       </div>
-  </div>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Fah</a>.
-  </div>
-  <!-- js files -->
+    </div>
+  </header>
+  <main>
+    <div class="screen">
+      <div class="historial"></div>
+      <input type="text" class="result" aria-label="output" placeholder="0" disabled />
+    </div>
+    <div class="basic-functions">
+      <div class="col">
+        <button class="btnNum" value="7">7</button>
+        <button class="btnNum" value="4">4</button>
+        <button class="btnNum" value="1">1</button>
+        <button class="symbolType" value="decimal" aria-label="decimal">
+          .
+        </button>
+      </div>
+      <div class="col">
+        <button class="btnNum" value="8">8</button>
+        <button class="btnNum" value="5">5</button>
+        <button class="btnNum" value="2">2</button>
+        <button class="btnNum" value="0">0</button>
+      </div>
+      <div class="col">
+        <button class="btnNum" value="9">9</button>
+        <button class="btnNum" value="6">6</button>
+        <button class="btnNum" value="3">3</button>
+        <button class="symbolType" value="/">/</button>
+      </div>
+      <div class="col">
+        <button class="symbolType" id="del" value="del" aria-label="delete">
+          DEL
+        </button>
+        <button class="symbolType" value="+">+</button>
+        <button class="symbolType" value="-">-</button>
+        <button class="symbolType" value="*">x</button>
+      </div>
+      <div class="buttons">
+        <button id="reset" value="reset">RESET</button>
+        <button id="output" value="output" aria-label="output">=</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="#">Fadziso Ndoro</a>.
+    </div>
+  </footer>
   <script src="./js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,131 +1,290 @@
-.calc-header {
-  color: #fff;
+body {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  font-size: 50%;
 }
 
-.toggle p {
-  margin: 0 5px;
-  color: #FFF;
-  cursor: pointer;
-}
-
-.control {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.control .box {
-  width: 60px;
-  height: 15px;
-  background-color: #182034;
-  border-radius: 30px;
-  margin-left: 4px;
-  position: relative;
-}
-
-.control #circle {
-  width: 15px;
-  height: 15px;
-  background-color: #d03f2f;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  border-radius: 30px;
-}
-
-.control p {
-  color: #FFF;
-  cursor: pointer;
-  margin-right: 4px;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Spartan', sans-serif;
-  color: #444b5a;
-  font-weight: 700;
-}
-
-:root {
-  --mainbgcolor: hsl(222, 26%, 31%);
-  --mainbg1color: hsl(0, 0%, 90%);
-  --mainbg2color: hsl(268, 75%, 9%);
-  --twotkbg: hsl(0, 5%, 81%);
-  --tbgkbgsbg: hsl(268, 71%, 12%);
-}
-
-.main {
-  width: 100%;
-  height: 100vh;
-  max-width: 1440px;
-  background-color: var(--mainbgcolor);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  min-width: 43em;
+  max-width: 43em;
+  margin: auto;
+  margin-top: 5%;
+}
+
+header h1 {
+  display: block;
+  width: 50%;
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+header .switch-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+}
+
+header .switch-style span {
+  display: block;
+  padding: 0.5rem;
+  font-family: "Spartan", sans-serif;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+header .switch-style .switch-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 6em;
+  height: 100%;
+  position: relative;
+  border-radius: 30px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+header .switch-style .switch-box .switch-button-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+}
+
+header .switch-style .switch-box .switch-button-text span {
+  height: 3em;
+  font-family: "Spartan", sans-serif;
+  font-size: 0.6rem;
+  color: #fff;
+}
+
+header .switch-style .switch-box .switch-button {
+  width: 15px;
+  height: 15px;
+  margin: 0.3em;
+  border-radius: 100%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  margin: auto;
 }
 
-body.active1 {
-  background-color: var(--mainbg1color);
+main .screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 43em;
+  padding: 1em;
+  border-radius: 15px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
-body.active1 .btn {
-  background-color: var(--twotkbg);
+main .screen .historial {
+  font-family: "Spartan", sans-serif;
+  font-size: 1rem;
+  color: #eee5e5;
 }
 
-body.active2 {
-  background-color: var(--mainbg2color);
+main .screen input[type="text"] {
+  display: block;
+  width: 90%;
+  text-align: end;
+  margin: auto;
+  padding: 0.3em;
+  font-family: "Spartan", sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
-body.active1 .toggle h3 {
-  color: #111;
+main .basic-functions {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (4rem)[4];
+      grid-template-columns: repeat(4, 4rem);
+  -ms-grid-rows: (2rem)[5];
+      grid-template-rows: repeat(5, 2rem);
+  gap: 1rem;
+  margin-top: 2em;
+  border-radius: 15px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  padding: 3em;
 }
 
-body.active2 .toggle h3 {
-  color: #ffe53d;
+main .basic-functions button {
+  width: 100%;
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+  color: #585a64;
+  padding: .5em;
+  -webkit-box-shadow: 0 0.19em 0em #a99c97;
+          box-shadow: 0 0.19em 0em #a99c97;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  border: none;
+  text-align: center;
+  cursor: pointer;
 }
 
-body.active1 .control .box {
-  background-color: var(--twotkbg);
+main .basic-functions .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
 }
 
-body.active2 .control #circle {
-  background-color: #00e0d1;
+main .basic-functions #del,
+main .basic-functions #reset {
+  display: block;
+  text-align: center;
+  background-color: #647299;
+  font-size: 1.3rem;
+  color: #fff;
+  -webkit-box-shadow: 0 0.19em 0em #4e5a81;
+          box-shadow: 0 0.19em 0em #4e5a81;
 }
 
-body.active1 .control #circle {
-  background-color: #ca5502;
+main .basic-functions #output {
+  display: block;
+  background-color: #d13f30;
+  color: #fff;
+  font-size: 1.3rem;
+  -webkit-box-shadow: 0 0.19em 0em #902418;
+          box-shadow: 0 0.19em 0em #902418;
 }
 
-body.active1 .control p {
-  color: #111;
+main .basic-functions .btnNum {
+  display: block;
+  background-color: #eae3db;
 }
 
-body.active1 .right p {
-  color: #111;
+main .basic-functions .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 6;
+  grid-row: 6/6;
 }
 
-body.active2 .control p {
-  color: #ffe53d;
+footer .attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  padding: 1.6em;
 }
 
-body.active2 .right p {
-  color: #ffe53d;
+footer .attribution a {
+  font-family: "Spartan", sans-serif;
+  font-size: 1rem;
+  color: #ff0;
+}
+
+@media (max-width: 500px) {
+  footer .attribution {
+    font-size: 11px;
+    padding: 1.6em;
+  }
+  footer .attribution a {
+    color: #ff0;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 350px) {
+  header {
+    min-width: 40em;
+    max-width: 40em;
+  }
+  main {
+    width: 40em;
+  }
+  main .screen {
+    width: 45em;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
