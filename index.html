@@ -23,30 +23,45 @@
   <div class="main">
       <div class="calculator-container">
         <header>
-          calc
+          <div class="toggle">
+            <h3 class="calc-header">calc</h3>
+              <nav>
+                <p id="first">1</p>
+                <p id="second">2</p>
+                <p id="third">3</p>
+              </nav>
+          </div>
+          <div class="control">
+            <p>Theme</p>
+            <div class="box">
+              <div id="circle"></div>
+            </div>
+          </div>
         </header>
         <div class="calculator-display">
-
+          <form name="calculate">
+            <input type="text" name="text" id="screen" readonly />
+          </form>
         </div>
         <div class="calculator-body">
-            <div class="button">7</div>
-            <div class="button">8</div>
-            <div class="button">9</div>
-            <div class="button">DEL</div>
-            <div class="button">4</div>
-            <div class="button">5</div>
-            <div class="button">6</div>
-            <div class="button">+</div>
-            <div class="button">1</div>
-            <div class="button">2</div>
-            <div class="button">3</div>
-            <div class="button">-</div>
-            <div class="button">.</div>
-            <div class="button">0</div>
-            <div class="button">/</div>
-            <div class="button">x</div>
-            <div class="button">RESET</div>
-            <div class="button">=</div>          
+            <div class="number">7</div>
+            <div class="number">8</div>
+            <div class="number">9</div>
+            <div class="delete-btn">DEL</div>
+            <div class="number">4</div>
+            <div class="number">5</div>
+            <div class="number">6</div>
+            <div class="add-btn">+</div>
+            <div class="number">1</div>
+            <div class="number">2</div>
+            <div class="number">3</div>
+            <div class="subtract-btn">-</div>
+            <div class="period-btn">.</div>
+            <div class="number">0</div>
+            <div class="divide-btn">/</div>
+            <div class="multiply-btn">x</div>
+            <div class="reset-btn">RESET</div>
+            <div class="equal-btn">=</div>          
         </div>
       </div>
   </div>

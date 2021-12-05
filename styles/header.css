@@ -1,0 +1,45 @@
+.calc-header {
+  color: #fff;
+}
+
+.toggle p {
+  margin: 0 5px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.control .box {
+  width: 60px;
+  height: 15px;
+  background-color: #182034;
+  border-radius: 30px;
+  margin-left: 4px;
+  position: relative;
+}
+
+.control #circle {
+  width: 15px;
+  height: 15px;
+  background-color: #d03f2f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 30px;
+}
+
+.control p {
+  color: #FFF;
+  cursor: pointer;
+  margin-right: 4px;
+}
+/*# sourceMappingURL=header.css.map */

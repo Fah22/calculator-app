@@ -5,7 +5,9 @@ button {
   cursor: pointer;
   border: 0;
   border-radius: 5px;
-  box-shadow: 0px 3px 0px 0px hsl(28, 16%, 65%);
+  -webkit-box-shadow: 0px 3px 0px 0px #b4a597;
+          box-shadow: 0px 3px 0px 0px #b4a597;
   margin: 10px 10px;
   font-size: 32px;
 }
+/*# sourceMappingURL=buttons.css.map */
